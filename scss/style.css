@@ -1,0 +1,2468 @@
+@import url(../fonts/static/Rubik-Regular.ttf);
+* {
+  scroll-behavior: smooth;
+}
+
+.container-univer {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 56px;
+}
+
+.container-nav {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 104px;
+}
+
+.container-bg {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  outline: none;
+  transition: 0.5s;
+}
+
+.triangle {
+  position: absolute;
+  right: 0;
+  padding-right: 0px;
+  margin-top: -260px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body #backtop {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: fixed;
+  right: 25px;
+  bottom: -50px;
+  z-index: 99;
+  background-color: #1e3858;
+  box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+body #backtop:hover {
+  background-color: #0e2038;
+  box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.5);
+}
+body header #navbar {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 10px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
+}
+body header nav {
+  z-index: 99;
+  padding: 10px 0;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff !important;
+}
+body header nav .nav-links {
+  display: flex;
+  align-items: center;
+}
+body header nav .nav-links .darkmodee {
+  max-width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+body header nav .logo {
+  padding-right: 24px;
+}
+body header nav .nav-input {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 100px;
+  background-color: none;
+  opacity: 0.5;
+}
+body header nav .input-img {
+  position: absolute;
+  padding-left: 462px;
+}
+body header nav .category {
+  color: #1c3554;
+  outline: none;
+  border: none;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+body header nav .selector {
+  padding-left: 40px;
+  padding-right: 24px;
+}
+body header nav a {
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  color: #242d36;
+  padding-right: 24px;
+}
+body header nav a:hover {
+  color: #617991;
+}
+body header nav .nav-buttons {
+  display: flex;
+  gap: 16px;
+}
+body header nav .nav-buttons .btn {
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 8px 32px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #1c3554;
+}
+body header nav .nav-buttons button:hover {
+  background-color: #f72585;
+  color: #fff;
+  border: 1px solid #f72585;
+}
+body main {
+  padding-top: 120px;
+}
+body main .hero {
+  background-color: #021934;
+  border-radius: 8px;
+}
+body main .hero .hero-section {
+  display: flex;
+}
+body main .hero .hero-section .hero-left .p-1 {
+  font-family: Rubik;
+  color: #fff;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px;
+  max-width: 550px;
+}
+body main .hero .hero-section .hero-left .p-2 {
+  color: #fff;
+  width: 647px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  max-width: 500px;
+}
+body main .hero .hero-section .hero-left .hero-input {
+  padding: 20px 56px;
+  border-radius: 8px;
+  border: none;
+  background: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  width: 380px;
+}
+body main .hero .hero-section .hero-left .hero-img {
+  position: absolute;
+  padding-top: 22px;
+  margin-left: -475px;
+}
+body main .hero .hero-section .hero-left .hero-button {
+  position: absolute;
+  padding-left: 370px;
+  margin-top: -57.5px;
+}
+body main .hero .hero-section .hero-left .hero-button .btn {
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 12px 32px;
+  background-color: #f72585;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+}
+body main .hero .hero-section .hero-left .hero-button button:hover {
+  border: none;
+  background-color: #f8368d;
+  color: rgb(250, 235, 235);
+}
+body main .hero .hero-section .hero-right {
+  padding-top: 65px;
+}
+body main .hero .hero-section .hero-right .right-bg {
+  width: 329px;
+  height: 683px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #e6e6e6;
+}
+body main .hero .hero-experts {
+  display: flex;
+  align-items: center;
+  padding-right: 208px;
+}
+body main .hero .hero-experts .hero-expert {
+  padding-top: 56px;
+  display: flex;
+  align-items: center;
+  padding-right: 48px;
+}
+body main .hero .hero-experts .hero-expert img {
+  padding-right: 8px;
+}
+body main .hero .hero-experts .hero-expert p {
+  color: #fff;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+body main .hero-contents .hero-content .p-1 {
+  display: flex;
+  justify-content: center;
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63.984px;
+}
+body main .hero-contents .hero-content .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+body main .hero-contents .hero-content .buttons button {
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 12px 32px;
+  background-color: #fff;
+  color: #aaaaaa;
+  width: 167px;
+  border-radius: 8px;
+  border: none;
+}
+body main .hero-contents .hero-content .buttons button:hover {
+  border: none;
+  background-color: #f8368d;
+  color: rgb(250, 235, 235);
+}
+body main .hero-contents .hero-content .hero-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+}
+body main .hero-contents .hero-content .hero-cards .card {
+  border-radius: 8px;
+  padding: 16px;
+}
+body main .hero-contents .hero-content .hero-cards .card .box {
+  width: 262.891px;
+  height: 208px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #ccc;
+}
+body main .hero-contents .hero-content .hero-cards .card .button {
+  position: absolute;
+  padding-left: 75px;
+  margin-top: -17px;
+}
+body main .hero-contents .hero-content .hero-cards .card .btn {
+  font-family: Montserrat SemiBold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 4px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #4586d6;
+  color: #fff;
+  padding: 4px 24px;
+}
+body main .hero-contents .hero-content .hero-cards .card:hover {
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.5);
+  border: none;
+  transition: 0.3s;
+}
+body main .hero-contents .hero-content .hero-cards .p-1 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  max-width: 262.891px;
+  padding-top: 16px;
+  text-transform: capitalize;
+}
+body main .hero-contents .hero-content .hero-cards .p-2 {
+  color: #f72585;
+  font-family: Montserrat SemiBold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+body main .hero-contents .hero-content .hero-cards .stars {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+}
+body main .hero-contents .hero-content .hero-cards .stars .p-1 {
+  color: #808080;
+  font-family: Montserrat SemiBold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 0;
+  padding-left: 8px;
+}
+body main .hero-contents .hero-content .hero-cards .prices {
+  display: flex;
+  align-items: center;
+}
+body main .hero-contents .hero-content .hero-cards .prices .p-1 {
+  color: #ccc;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+body main .hero-contents .hero-content .hero-cards .prices .p-2 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  padding-left: 8px;
+}
+body main .hero-contents .hero-content .courses-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+body main .hero-contents .hero-content .courses-btn .btn {
+  font-family: Montserrat SemiBold;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 14px 94px;
+  border-radius: 8px;
+  background: #f72585;
+  border: none;
+}
+body main .hero-contents .hero-content .courses-btn .btn:hover {
+  background: #f1006d;
+  color: #d6c4c4;
+}
+body main .hero-items .items {
+  padding-top: 106px;
+}
+body main .hero-items .items .p-1 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63.984px;
+  padding-bottom: 56px;
+}
+body main .hero-items .items .cards {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 50px;
+}
+body main .hero-items .items .cards .card {
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  height: 350px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  opacity: 0.5;
+  background: #000;
+}
+body main .hero-items .items .cards .card .p-1 {
+  color: #fff;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  padding-top: 278px;
+}
+body main .hero-items .items .cards .card:hover {
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.8);
+  border: none;
+  transition: 0.3s;
+}
+body main .hero-items .items .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 200px 80px;
+}
+body main .hero-items .items .icons .box .p-1 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 0px;
+}
+body main .hero-items .items .icons .box .p-2 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: -80px;
+}
+body main .hero-items .items .info {
+  display: flex;
+  gap: 56px;
+}
+body main .hero-items .items .info .left-side {
+  width: 608px;
+  height: 657px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #ccc;
+}
+body main .hero-items .items .info .right-side .p-1 {
+  color: var(--text-tittle, #1c3554);
+  font-family: Rubik;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63.984px;
+}
+body main .hero-items .items .info .right-side .p-2 {
+  color: var(--text-body, #808080);
+  width: 565px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+body main .hero-items .items .info .right-side .button {
+  padding-top: 30px;
+}
+body main .hero-items .items .info .right-side .button .btn {
+  font-family: Montserrat SemiBold;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 14px 54px;
+  border-radius: 8px;
+  background: #f72585;
+  border: none;
+}
+body main .hero-items .items .info .right-side .button .btn:hover {
+  background: #f1006d;
+  color: #d6c4c4;
+}
+body main .hero-items .items .study {
+  padding-top: 224px;
+  display: flex;
+  gap: 48px;
+}
+body main .hero-items .items .study .strelkal {
+  padding-top: 179px;
+  padding-right: 0px;
+}
+body main .hero-items .items .study .strelkar {
+  padding-top: 179px;
+  padding-left: 0px;
+}
+body main .hero-items .items .study .left {
+  background: #ccc;
+  width: 368px;
+  height: 377px;
+  flex-shrink: 0;
+}
+body main .hero-items .items .study .left .circle {
+  position: absolute;
+  padding-top: 240px;
+  margin-left: -40px;
+}
+body main .hero-items .items .study .right .p-1 {
+  color: var(--text-tittle, #1c3554);
+  width: 590px;
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+}
+body main .hero-items .items .study .right .p-2 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  margin-top: -50px;
+}
+body main .hero-items .items .study .right .p-3 {
+  color: var(--text-body, #808080);
+  font-family: Montserrat SemiBold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 200px;
+}
+body main .hero-last {
+  padding-bottom: 160px;
+}
+body main .hero-last .hero-blog .blog-text .p-1 {
+  display: flex;
+  justify-content: center;
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63.984px;
+  padding-bottom: 30px;
+}
+body main .hero-last .hero-blog .logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main .hero-last .hero-blog .logoss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .hero-last .hero-blog .blog .p-1 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63.984px;
+  padding-top: 100px;
+}
+body main .hero-last .hero-blog .blog .last-cards {
+  display: flex;
+  gap: 15px;
+}
+body main .hero-last .hero-blog .blog .last-cards .card {
+  width: 330px;
+  height: 518px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+  padding: 16px;
+}
+body main .hero-last .hero-blog .blog .last-cards .card .content-card {
+  width: 328px;
+  height: 240px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #ccc;
+}
+body main .hero-last .hero-blog .blog .last-cards .card .texts {
+  display: flex;
+  align-items: center;
+  margin-top: -90px;
+}
+body main .hero-last .hero-blog .blog .last-cards .card .texts .p-1 {
+  color: #808080;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-right: 8px;
+}
+body main .hero-last .hero-blog .blog .last-cards .card .p-2 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  width: 308px;
+  margin-top: -1px;
+  padding-top: 10px;
+}
+body main .hero-last .hero-blog .blog .last-cards .card .p-3 {
+  color: #808080;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  width: 278px;
+}
+body main .hero-last .hero-blog .blog .last-cards .card a {
+  color: #f72585;
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+body main .hero-last .hero-blog .blog .last-cards .card:hover {
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.8);
+  border: none;
+  transition: 0.3s;
+}
+
+main .hero-courses .hero-course .page {
+  display: flex;
+  align-items: center;
+}
+main .hero-courses .hero-course .page .p-1 {
+  color: #808080;
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding-right: 8px;
+}
+main .hero-courses .hero-course .page .p-2 {
+  color: #1c3554;
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  padding-left: 8px;
+}
+main .hero-courses .hero-course .texts .p-1 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 0px;
+  line-height: 88px;
+}
+main .hero-courses .hero-course .texts .p-2 {
+  color: #808080;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  margin-top: -20px;
+  width: 670px;
+}
+main .hero-courses .hero-course .texts .p-3 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  margin-top: 0px;
+  text-transform: capitalize;
+}
+main .hero-courses .hero-course .hero-cards {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+main .hero-courses .hero-course .hero-cards .pink-left {
+  left: 0;
+  top: 700px;
+}
+main .hero-courses .hero-course .hero-cards .pink {
+  position: absolute;
+  right: 0;
+  top: 700px;
+  display: flex;
+  align-items: center;
+  width: 51px;
+  height: 51px;
+  flex-shrink: 0;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+main .hero-courses .hero-course .hero-cards .pink img {
+  padding-left: 12px;
+}
+main .hero-courses .hero-course .hero-cards .pink:hover {
+  background-color: #f8368d;
+  transition: 0.3s;
+  cursor: pointer;
+}
+main .hero-courses .hero-course .hero-cards .card {
+  border-radius: 8px;
+  padding: 16px;
+}
+main .hero-courses .hero-course .hero-cards .card .box {
+  padding-left: 5px;
+  width: 242.891px;
+  height: 208px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #ccc;
+}
+main .hero-courses .hero-course .hero-cards .card .button {
+  position: absolute;
+  padding-left: 75px;
+  margin-top: -17px;
+}
+main .hero-courses .hero-course .hero-cards .card .btn {
+  font-family: Montserrat SemiBold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 4px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #4586d6;
+  color: #fff;
+  padding: 4px 24px;
+}
+main .hero-courses .hero-course .hero-cards .card:hover {
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.5);
+  border: none;
+  transition: 0.3s;
+}
+main .hero-courses .hero-course .hero-cards .p-1 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  max-width: 262.891px;
+  padding-top: 16px;
+  text-transform: capitalize;
+}
+main .hero-courses .hero-course .hero-cards .p-2 {
+  color: #f72585;
+  font-family: Montserrat SemiBold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+main .hero-courses .hero-course .hero-cards .stars {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+}
+main .hero-courses .hero-course .hero-cards .stars .p-1 {
+  color: #808080;
+  font-family: Montserrat SemiBold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 0;
+  padding-left: 8px;
+}
+main .hero-courses .hero-course .hero-cards .prices {
+  display: flex;
+  align-items: center;
+}
+main .hero-courses .hero-course .hero-cards .prices .p-1 {
+  color: #ccc;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+main .hero-courses .hero-course .hero-cards .prices .p-2 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  padding-left: 8px;
+}
+main .hero-topics .texts-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .hero-topics .texts-btn .p-1 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+}
+main .hero-topics .texts-btn button {
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 12px 102px;
+  background-color: #ff4d9d;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+}
+main .hero-topics .texts-btn button:hover {
+  border: none;
+  background-color: #fd3d85;
+  color: rgba(255, 255, 255, 0.719);
+}
+main .hero-topics .cards {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 50px;
+}
+main .hero-topics .cards .card {
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 350px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  opacity: 0.5;
+  background: #000;
+}
+main .hero-topics .cards .card .p-1 {
+  color: #fff;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  padding-top: 278px;
+}
+main .hero-topics .cards .card:hover {
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.8);
+  border: none;
+  transition: 0.3s;
+}
+main .all-courses .btn-text {
+  display: flex;
+  align-items: center;
+}
+main .all-courses .btn-text .p-1 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63.984px;
+}
+main .all-courses .btn-text .course-btn {
+  padding-left: 495px;
+  padding-right: 40px;
+}
+main .all-courses .btn-text button {
+  display: flex;
+  align-items: center;
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 16px 40px;
+  background-color: #ff4d9d;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  gap: 10px;
+}
+main .all-courses .btn-text button:hover {
+  border: none;
+  background-color: #fd3d85;
+  color: rgba(255, 255, 255, 0.719);
+}
+main .all-courses .main-courses {
+  display: flex;
+}
+main .all-courses .main-courses .left-side .line img {
+  position: absolute;
+  padding-left: 275px;
+  padding-right: 32px;
+  padding-top: 25px;
+}
+main .all-courses .main-courses .left-side .ratings .texts {
+  display: flex;
+  align-items: center;
+}
+main .all-courses .main-courses .left-side .ratings .texts .p-1 {
+  color: var(--text-tittle, #1c3554);
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  padding-right: 100px;
+}
+main .all-courses .main-courses .left-side .ratings .p-1 {
+  color: #1c3554;
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+main .all-courses .main-courses .left-side .ratings .p-2 {
+  color: #808080;
+  font-family: Montserrat SemiBold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 8px;
+}
+main .all-courses .main-courses .left-side .ratings .five {
+  display: flex;
+  align-items: center;
+}
+main .all-courses .main-courses .left-side .ratings .five img {
+  padding-right: 8px;
+}
+main .all-courses .main-courses .left-side .ratings .more {
+  display: flex;
+  align-items: center;
+}
+main .all-courses .main-courses .left-side .ratings .more .p-1 {
+  color: #1c3554;
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+main .all-courses .main-courses .left-side .ratings .more img {
+  padding-left: 8px;
+}
+main .all-courses .main-courses .right-side {
+  padding-left: 45px;
+}
+main .all-courses .main-courses .right-side .hero-cards {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+main .all-courses .main-courses .right-side .hero-cards .card {
+  border-radius: 8px;
+  padding: 16px;
+}
+main .all-courses .main-courses .right-side .hero-cards .card .box {
+  padding-left: 5px;
+  width: 242.891px;
+  height: 208px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #ccc;
+}
+main .all-courses .main-courses .right-side .hero-cards .card .button {
+  position: absolute;
+  padding-left: 75px;
+  margin-top: -17px;
+}
+main .all-courses .main-courses .right-side .hero-cards .card .btn {
+  font-family: Montserrat SemiBold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 4px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #4586d6;
+  color: #fff;
+  padding: 4px 24px;
+}
+main .all-courses .main-courses .right-side .hero-cards .card:hover {
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.5);
+  border: none;
+  transition: 0.3s;
+}
+main .all-courses .main-courses .right-side .hero-cards .p-1 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  max-width: 262.891px;
+  padding-top: 16px;
+  text-transform: capitalize;
+}
+main .all-courses .main-courses .right-side .hero-cards .p-2 {
+  color: #f72585;
+  font-family: Montserrat SemiBold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+main .all-courses .main-courses .right-side .hero-cards .stars {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+}
+main .all-courses .main-courses .right-side .hero-cards .stars .p-1 {
+  color: #808080;
+  font-family: Montserrat SemiBold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 0;
+  padding-left: 8px;
+}
+main .all-courses .main-courses .right-side .hero-cards .prices {
+  display: flex;
+  align-items: center;
+}
+main .all-courses .main-courses .right-side .hero-cards .prices .p-1 {
+  color: #ccc;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+main .all-courses .main-courses .right-side .hero-cards .prices .p-2 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  padding-left: 8px;
+}
+main .all-courses .main-courses .right-side .numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  gap: 16px;
+}
+main .all-courses .main-courses .right-side .numbers .num-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #f72585;
+}
+main .all-courses .main-courses .right-side .numbers .num-box .p-1 {
+  color: #fff;
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+main .all-courses .main-courses .right-side .numbers .bg {
+  background-color: #fff;
+}
+main .all-courses .main-courses .right-side .numbers .bg .p-1 {
+  color: #ccc;
+}
+main .all-courses .main-courses .right-side .numbers .num-box:hover {
+  transition: 0.4s;
+  background-color: #e20066;
+  color: #fff;
+}
+main .all-courses .main-courses .right-side .numbers .num-box:hover .p-1 {
+  color: #fff;
+}
+
+body header .nav-back {
+  background-color: #808080 !important;
+  z-index: 99;
+}
+body header .nav-back .nav-buttons .btn:hover {
+  border-color: #f72585 !important;
+}
+body header .nav-back input {
+  background-color: transparent;
+}
+body header .nav-back .category {
+  color: #fff;
+  background-color: transparent;
+}
+body header .nav-back .category:hover {
+  cursor: pointer;
+  color: #8195b3;
+}
+body header .nav-back a {
+  color: #fff;
+}
+body header .nav-back button {
+  border-color: #fff !important;
+  color: #fff;
+}
+body header .hero-details {
+  max-width: 100%;
+  flex-shrink: 0;
+  background-color: #808080 !important;
+  padding-top: 100px;
+}
+body header .hero-details .details-back .details .links {
+  display: flex;
+  align-items: center;
+}
+body header .hero-details .details-back .details .links a {
+  display: flex;
+  align-items: center;
+  color: #e6e6e6;
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding-right: 8px;
+}
+body header .hero-details .details-back .details .links a:hover {
+  color: #ffffff;
+}
+body header .hero-details .details-back .details .p-1 {
+  color: #fff;
+  max-width: 600px;
+  font-family: Rubik;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63.984px;
+}
+body header .hero-details .details-back .details .stars {
+  display: flex;
+  align-items: center;
+  margin-top: -30px;
+}
+body header .hero-details .details-back .details .stars .p-1 {
+  color: #fff;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  padding: 0 16px;
+}
+body header .hero-details .details-back .details .stars .p-2 {
+  color: #e6e6e6;
+  font-family: Montserrat SemiBold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-right: 8px;
+}
+body header .hero-details .details-back .details .arif {
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+}
+body header .hero-details .details-back .details .arif .p-1 {
+  color: #fff;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  padding-left: 16px;
+}
+body header .hero-details .details-back .details .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #aaa;
+}
+body header .hero-details .details-back .details .buttons {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 80px;
+}
+body header .hero-details .details-back .details .buttons .btn {
+  display: flex;
+  align-items: center;
+  padding: 12px 32px;
+  gap: 10px;
+  border-radius: 8px;
+  background: #f72585;
+  border: none;
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+}
+body header .hero-details .details-back .details .buttons .btn:hover {
+  background-color: #e20066;
+  color: #fff;
+}
+body header .hero-details .details-back .details .buttons .btn-1 {
+  background-color: #fff;
+  color: #f72585;
+}
+body main .hero-learn .sides {
+  display: flex;
+}
+body main .hero-learn .sides .right-side {
+  margin-left: -125px;
+}
+body main .hero-learn .sides .right-side .card {
+  width: 440px;
+  height: 961px;
+  flex-shrink: 0;
+}
+body main .hero-learn .sides .right-side .card .box {
+  width: 440px;
+  height: 313px;
+  flex-shrink: 0;
+  border-radius: 8px 8px 0px 0px;
+  opacity: 0.5;
+  background: #000;
+}
+body main .hero-learn .sides .right-side .card .box img {
+  padding-top: 134.5px;
+  padding-left: 198px;
+}
+body main .hero-learn .sides .right-side .card .price {
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+}
+body main .hero-learn .sides .right-side .card .price .p-1 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: capitalize;
+}
+body main .hero-learn .sides .right-side .card .price .p-2 {
+  color: #ccc;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding-left: 18px;
+}
+body main .hero-learn .sides .right-side .card .div {
+  display: flex;
+  justify-content: center;
+}
+body main .hero-learn .sides .right-side .card .card-sides {
+  display: flex;
+}
+body main .hero-learn .sides .right-side .card .card-sides .left-side {
+  padding-left: 32px;
+}
+body main .hero-learn .sides .right-side .card .card-sides .left-side .p-1 {
+  color: #1c3554;
+  width: 203px;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+body main .hero-learn .sides .right-side .card .card-sides .left-side .check {
+  display: flex;
+  align-items: center;
+}
+body main .hero-learn .sides .right-side .card .card-sides .left-side .check .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4586d6;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+body main .hero-learn .sides .right-side .card .card-sides .left-side .check p {
+  color: #1c3554;
+  padding-left: 16px;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+body main .hero-learn .sides .right-side .card .card-sides .left-side .side-btn {
+  padding-top: 35px;
+  padding-bottom: 21px;
+}
+body main .hero-learn .sides .right-side .card .card-sides .left-side .side-btn .btn {
+  width: 109px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #ef233c;
+  border: none;
+  color: #fff;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 20px;
+}
+body main .hero-learn .sides .right-side .card .card-sides .left-side .side-btn .btn:hover {
+  background: #ec001c;
+}
+body main .hero-learn .sides .right-side .card .card-btn {
+  padding-left: 35px;
+  padding-top: 44px;
+}
+body main .hero-learn .sides .right-side .card .card-btn .btn {
+  color: #f72585;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: capitalize;
+  gap: 10px;
+  padding: 24px 140px;
+  border-radius: 8px;
+  background: #fff;
+  border-color: #f72585;
+}
+body main .hero-learn .sides .right-side .card .card-btn button:hover {
+  color: #fff;
+  background: #f72585;
+  border-color: #f72585;
+}
+body main .hero-learn .sides .right-side .card .card-btn .btn-1 {
+  padding: 24px 148.5px;
+}
+body main .hero-learn .sides .right-side .card .card-btn .card-bt {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+body main .hero-learn .sides .right-side .card:hover {
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.5);
+  border: none;
+  transition: 0.3s;
+}
+body main .hero-learn .sides .left-side .object .p-0 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: capitalize;
+}
+body main .hero-learn .sides .left-side .object .ramka {
+  display: flex;
+  width: 564px;
+  height: 480px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff5f9;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+body main .hero-learn .sides .left-side .object .ramka .left-side p {
+  padding-right: 100px;
+}
+body main .hero-learn .sides .left-side .object .ramka .photo-text {
+  display: flex;
+  padding-top: 20px;
+}
+body main .hero-learn .sides .left-side .object .ramka .photo-text img {
+  margin-top: -20px;
+  padding-right: 8px;
+  padding-left: 40px;
+}
+body main .hero-learn .sides .left-side .object .ramka .photo-text .p-1 {
+  color: #1c3554;
+  font-family: Montserrat SemiBold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 200px;
+}
+body main .hero-learn .sides .left-side .requare .p-0 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: capitalize;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+body main .hero-learn .sides .left-side .requare .ramka {
+  width: 564px;
+  height: 328px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #fff5f9;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+body main .hero-learn .sides .left-side .requare .ramka .texts {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  padding-top: 18px;
+}
+body main .hero-learn .sides .left-side .requare .ramka .texts p {
+  color: #1c3554;
+  font-family: Montserrat SemiBold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+body main .hero-learn .sides .left-side .module .texts {
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+body main .hero-learn .sides .left-side .module .texts .p-1 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding-right: 80px;
+}
+body main .hero-learn .sides .left-side .module .texts .p-2 {
+  color: #1c3554;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+body main .hero-learn .sides .left-side .module .ramka {
+  width: 564px;
+  height: 80px;
+  flex-shrink: 0;
+  background-color: #fff5f9;
+  display: flex;
+  align-items: center;
+}
+body main .hero-learn .sides .left-side .module .ramka .p-1 {
+  color: var(--text-tittle, #1c3554);
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  padding-right: 240px;
+  padding-left: 42px;
+}
+body main .hero-learn .sides .left-side .module .data {
+  display: flex;
+}
+body main .hero-learn .sides .left-side .module .data .left {
+  padding-left: 40px;
+}
+body main .hero-learn .sides .left-side .module .data .left .player {
+  display: flex;
+  align-items: center;
+}
+body main .hero-learn .sides .left-side .module .data .left .player .p-1 {
+  color: #1c3554;
+  text-align: right;
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+}
+body main .hero-learn .sides .left-side .module .data .right {
+  padding-top: 6px;
+  padding-left: 235px;
+  padding-bottom: 40px;
+}
+body main .hero-learn .sides .left-side .module .data .right .p-1 {
+  padding-bottom: 15px;
+  color: var(--text-body, #808080);
+  text-align: right;
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+}
+body main .hero-learn .sides .left-side .module .pages .page:hover {
+  background: #f5bfd5;
+  cursor: pointer;
+}
+body main .hero-learn .sides .left-side .module .pages .page {
+  display: flex;
+  align-items: center;
+  width: 486px;
+  flex-shrink: 0;
+  background: #fff5f9;
+  padding: 2px 40px;
+}
+body main .hero-learn .sides .left-side .module .pages .page img {
+  position: absolute;
+  right: 0;
+  padding-right: 700px;
+}
+body main .hero-learn .sides .left-side .module .pages .page .p-1 {
+  display: flex;
+  color: #1c3554;
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+body main .hero-learn .sides .left-side .module-btn {
+  padding-top: 40px;
+}
+body main .hero-learn .sides .left-side .module-btn .btn:hover {
+  background-color: #ff0073;
+  border-color: #ff0073;
+}
+body main .hero-learn .sides .left-side .module-btn .btn {
+  display: flex;
+  width: 568px;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  background: #f72585;
+  border-color: #f72585;
+  color: #fff;
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+body main .hero-learn .sides .left-side .first-text {
+  padding-right: 110px;
+  margin-top: -45px;
+}
+body main .hero-learn .sides .left-side .first-text .p-1 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: capitalize;
+}
+body main .hero-learn .sides .left-side .first-text .p-2 {
+  color: #808080;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  width: 580px;
+}
+body main .hero-learn .sides .left-side .mentors {
+  padding-top: 90px;
+}
+body main .hero-learn .sides .left-side .mentors .p-1 {
+  color: var(--text-tittle, #1c3554);
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+body main .hero-learn .sides .left-side .mentors .mentor {
+  display: flex;
+}
+body main .hero-learn .sides .left-side .mentors .mentor .box {
+  width: 297px;
+  height: 320px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--text-in-field, #ccc);
+}
+body main .hero-learn .sides .left-side .mentors .mentor .card {
+  padding-left: 32px;
+}
+body main .hero-learn .sides .left-side .mentors .mentor .card .p-1 {
+  color: var(--text-tittle, #1c3554);
+  display: flex;
+  margin-top: 0px;
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  padding-right: 10px;
+}
+body main .hero-learn .sides .left-side .mentors .mentor .card .p-2 {
+  color: var(--text-body, #808080);
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+body main .hero-learn .sides .left-side .mentors .mentor .card .flex .p-4 {
+  color: var(--text-tittle, #1c3554);
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+body main .hero-learn .sides .left-side .mentors .mentor .card img {
+  padding-right: 10px;
+}
+body main .hero-learn .sides .left-side .mentors .mentor .card .flex {
+  display: flex;
+  align-items: center;
+}
+body main .hero-learn .sides .left-side .mentors .mentor .card .p-3 {
+  width: 401px;
+  color: var(--text-body, #808080);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  margin-top: -10px;
+}
+body main .hero-learn .sides .left-side .mentors .mentor .card .number {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+body main .hero-learn .sides .left-side .mentors .mentor .card .number .left {
+  display: flex;
+  align-items: center;
+}
+body main .hero-learn .sides .left-side .mentors .mentor .card .number .left .color {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  background-color: #4586d6;
+  border-radius: 50%;
+}
+body main .hero-learn .sides .left-side .mentors .mentor .card .number .left .p-1 {
+  color: var(--text-body, #808080);
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 8px;
+  padding-top: 15px;
+}
+body main .hero-learn .sides .left-side .mentors .mentor .card .number .right {
+  display: flex;
+  align-items: center;
+}
+body main .hero-learn .sides .left-side .mentors .mentor .card .number .right .color {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  background-color: #4586d6;
+  border-radius: 50%;
+}
+body main .hero-learn .sides .left-side .mentors .mentor .card .number .right .p-1 {
+  color: var(--text-body, #808080);
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding-left: 8px;
+  padding-top: 15px;
+}
+body main .hero-learn .sides .left-side .feedback {
+  padding-top: 90px;
+}
+body main .hero-learn .sides .left-side .feedback img {
+  max-width: 700px;
+}
+body main .hero-learn .sides .left-side .reviews {
+  padding-top: 100px;
+}
+body main .hero-learn .sides .left-side .reviews .btn-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 100px;
+}
+body main .hero-learn .sides .left-side .reviews .btn-text .p-1 {
+  color: var(--text-tittle, #1c3554);
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: capitalize;
+}
+body main .hero-learn .sides .left-side .reviews .btn-text .btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  color: var(--other-white, #fff);
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 8px;
+  border-color: #f72585;
+  gap: 10px;
+  background: var(--primary-pink, #f72585);
+}
+body main .hero-learn .sides .left-side .reviews .btn-text .btn:hover {
+  background: var(--primary-pink, #ff0073);
+}
+body main .hero-learn .sides .left-side .acaunt {
+  display: flex;
+  align-items: center;
+}
+body main .hero-learn .sides .left-side .acaunt .email {
+  width: 102px;
+  height: 102px;
+  flex-shrink: 0;
+  background: #cccccc;
+  border-radius: 50%;
+}
+body main .hero-learn .sides .left-side .acaunt .phone {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+body main .hero-learn .sides .left-side .acaunt .phone .texts {
+  padding-right: 360px;
+}
+body main .hero-learn .sides .left-side .acaunt .phone .like img {
+  padding-left: 15px;
+}
+body main .hero-learn .sides .left-side .acaunt .phone .p-1 {
+  color: var(--text-tittle, #1c3554);
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: -3px;
+}
+body main .hero-learn .sides .left-side .acaunt .phone img {
+  padding-top: 10px;
+}
+body main .hero-learn .sides .left-side .acaunt .phone .p-2 {
+  color: var(--text-body, #808080);
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: -1px;
+}
+body main .hero-learn .sides .left-side .line-text .p-1 {
+  color: var(--text-body, #808080);
+  max-width: 655px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+body main .hero-learn .sides .left-side .pink-btn {
+  padding-top: 40px;
+}
+body main .hero-learn .sides .left-side .pink-btn .btn {
+  color: var(--other-white, #fff);
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 8px;
+  background: var(--primary-pink, #f72585);
+  border-color: #f72585;
+  padding: 25px 270px;
+}
+body main .kecek {
+  padding-top: 80px;
+}
+body main .kecek .arif .p-0 {
+  color: var(--text-tittle, #1c3554);
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 150% */
+  text-transform: capitalize;
+}
+body main .kecek .hero-cards {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+body main .kecek .hero-cards .card {
+  border-radius: 8px;
+  padding: 16px;
+}
+body main .kecek .hero-cards .card .box {
+  padding-left: 5px;
+  width: 242.891px;
+  height: 208px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #ccc;
+}
+body main .kecek .hero-cards .card .button {
+  position: absolute;
+  padding-left: 75px;
+  margin-top: -17px;
+}
+body main .kecek .hero-cards .card .btn {
+  font-family: Montserrat SemiBold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 4px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #4586d6;
+  color: #fff;
+  padding: 4px 24px;
+}
+body main .kecek .hero-cards .card:hover {
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.5);
+  border: none;
+  transition: 0.3s;
+}
+body main .kecek .hero-cards .p-1 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  max-width: 262.891px;
+  padding-top: 16px;
+  text-transform: capitalize;
+}
+body main .kecek .hero-cards .p-2 {
+  color: #f72585;
+  font-family: Montserrat SemiBold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+body main .kecek .hero-cards .stars {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+}
+body main .kecek .hero-cards .stars .p-1 {
+  color: #808080;
+  font-family: Montserrat SemiBold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 0;
+  padding-left: 8px;
+}
+body main .kecek .hero-cards .prices {
+  display: flex;
+  align-items: center;
+}
+body main .kecek .hero-cards .prices .p-1 {
+  color: #ccc;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+body main .kecek .hero-cards .prices .p-2 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  padding-left: 8px;
+}
+
+body header .blog-section {
+  height: 240px;
+}
+body main .hero-charge .blog-sides {
+  display: flex;
+  padding-bottom: 56px;
+}
+body main .hero-charge .blog-sides .blog-left {
+  width: 600px;
+  height: 517px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #ccc;
+}
+body main .hero-charge .blog-sides .blog-right {
+  padding-left: 84px;
+}
+body main .hero-charge .blog-sides .blog-right .p-1 {
+  color: var(--text-tittle, #1c3554);
+  max-width: 502px;
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: -6px;
+}
+body main .hero-charge .blog-sides .blog-right .date {
+  display: flex;
+  align-items: center;
+}
+body main .hero-charge .blog-sides .blog-right .date .p-1 {
+  color: #808080;
+  font-family: Montserrat SemiBold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+body main .hero-charge .blog-sides .blog-right .date img {
+  margin-top: -23px;
+  padding: 0 16px;
+}
+body main .hero-charge .blog-sides .blog-right .p-2 {
+  color: var(--text-body, #808080);
+  width: 460px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+body main .hero-charge .blog-sides .blog-right .blog-btn {
+  padding-top: 72px;
+}
+body main .hero-charge .blog-sides .blog-right .blog-btn .btn {
+  color: var(--text-white, #fff);
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 8px 34px;
+  border-radius: 8px;
+  border-color: #f72585;
+  background: var(--primary-pink, #f72585);
+}
+body main .hero-charge .blog-sides .blog-right .blog-btn .btn:hover {
+  background-color: #d40060;
+}
+body main .numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  gap: 16px;
+}
+body main .numbers .num-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #f72585;
+}
+body main .numbers .num-box .p-1 {
+  color: #fff;
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+body main .numbers .bg {
+  background-color: #fff;
+}
+body main .numbers .bg .p-1 {
+  color: #ccc;
+}
+body main .numbers .num-box:hover {
+  transition: 0.4s;
+  background-color: #e20066;
+  color: #fff;
+}
+body main .numbers .num-box:hover .p-1 {
+  color: #fff;
+}
+body main .blog-numbers .numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  gap: 16px;
+}
+body main .blog-numbers .numbers .num-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #f72585;
+}
+body main .blog-numbers .numbers .num-box .p-1 {
+  color: #fff;
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+body main .blog-numbers .numbers .bg {
+  background-color: #fff;
+}
+body main .blog-numbers .numbers .bg .p-1 {
+  color: #ccc;
+}
+body main .blog-numbers .numbers .num-box:hover {
+  transition: 0.4s;
+  background-color: #e20066;
+  color: #fff;
+}
+body main .blog-numbers .numbers .num-box:hover .p-1 {
+  color: #fff;
+}
+
+body header .background nav .nav-links .link {
+  padding-top: 13px;
+  margin-left: -10px;
+}
+body header .background nav .nav-links .nav-email {
+  display: flex;
+  align-items: center;
+}
+body header .background nav .nav-links .nav-email .circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #aaa;
+}
+body header .background nav .nav-links .nav-email .p-1 {
+  color: var(--text-white, #fff);
+  font-family: Montserrat SemiBold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 8px;
+  padding-right: 10px;
+}
+body main .hero-email .accaount {
+  display: flex;
+  align-items: center;
+}
+body main .hero-email .accaount .circle {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+body main .hero-email .accaount .p-1 {
+  color: var(--text-tittle, #1c3554);
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: 26px;
+  text-transform: capitalize;
+}
+body main .hero-email .accaount .p-2 {
+  color: var(--text-body, #808080);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  padding-left: 26px;
+  text-transform: capitalize;
+  margin-top: -10px;
+}
+body main .hero-email .sections {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 170px;
+  padding-top: 64px;
+}
+body main .hero-email .sections .p-1 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+}
+body main .hero-email .sections .p-2 {
+  color: #808080;
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+}
+body main .hero-email .colors {
+  padding-left: 155.5px;
+  margin-top: -30px;
+}
+body main .hero-email .colors .color {
+  width: 178px;
+  height: 5px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  background: var(--primary-pink, #f72585);
+}
+body main .hero-accaunt .my-courses .hero-cards {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+body main .hero-accaunt .my-courses .hero-cards .card {
+  border-radius: 8px;
+  padding: 16px;
+}
+body main .hero-accaunt .my-courses .hero-cards .card .box {
+  padding-left: 5px;
+  width: 242.891px;
+  height: 208px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #ccc;
+}
+body main .hero-accaunt .my-courses .hero-cards .card .button {
+  position: absolute;
+  padding-left: 75px;
+  margin-top: -17px;
+}
+body main .hero-accaunt .my-courses .hero-cards .card .btn {
+  font-family: Montserrat SemiBold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 4px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #4586d6;
+  color: #fff;
+  padding: 4px 24px;
+}
+body main .hero-accaunt .my-courses .hero-cards .card:hover {
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.5);
+  border: none;
+  transition: 0.3s;
+}
+body main .hero-accaunt .my-courses .hero-cards .p-1 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  max-width: 262.891px;
+  padding-top: 16px;
+  text-transform: capitalize;
+}
+body main .hero-accaunt .my-courses .hero-cards .p-2 {
+  color: #f72585;
+  font-family: Montserrat SemiBold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+body main .hero-accaunt .my-courses .hero-cards .stars {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+}
+body main .hero-accaunt .my-courses .hero-cards .stars .p-1 {
+  color: #808080;
+  font-family: Montserrat SemiBold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 0;
+  padding-left: 8px;
+}
+body main .hero-accaunt .my-courses .hero-cards .prices {
+  display: flex;
+  align-items: center;
+}
+body main .hero-accaunt .my-courses .hero-cards .prices .p-1 {
+  color: #ccc;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+body main .hero-accaunt .my-courses .hero-cards .prices .p-2 {
+  color: #1c3554;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  padding-left: 8px;
+}
+body footer {
+  padding: 40px 40px;
+  padding-top: 120px;
+}
+body footer .background {
+  border-radius: 8px;
+  background: var(--other-navy, #021934);
+  height: 435px;
+}
+body footer .background .all-footer {
+  display: flex;
+}
+body footer .background .all-footer .all-links {
+  display: flex;
+  padding-top: 45px;
+}
+body footer .background .all-footer .all-links .about {
+  display: flex;
+  flex-direction: column;
+  padding-left: 120px;
+}
+body footer .background .all-footer .all-links .about .p-1 {
+  padding-bottom: 20px;
+  color: var(--text-white, #fff);
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+body footer .background .all-footer .all-links .about a {
+  color: var(--text-white, #fff);
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding-bottom: 8px;
+}
+body footer .background .all-footer .all-links .about a:hover {
+  color: #aaa;
+}
+body footer .background .all-footer .all-links .support {
+  padding-left: 132px;
+  display: flex;
+  flex-direction: column;
+}
+body footer .background .all-footer .all-links .support .p-1 {
+  padding-bottom: 20px;
+  color: var(--text-white, #fff);
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+body footer .background .all-footer .all-links .support a {
+  color: var(--text-white, #fff);
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding-bottom: 8px;
+}
+body footer .background .all-footer .all-links .company {
+  display: flex;
+  flex-direction: column;
+  padding-left: 139px;
+}
+body footer .background .all-footer .all-links .company .p-1 {
+  padding-bottom: 20px;
+  color: var(--text-white, #fff);
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+body footer .background .all-footer .all-links .company a {
+  color: var(--text-white, #fff);
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding-bottom: 8px;
+}
+body footer .background .logo {
+  padding-top: 68px;
+}
+body footer .background .p-0 {
+  width: 400px;
+  color: var(--text-white, #fff);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  padding-top: 20px;
+}
+body footer .background .last-clas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+body footer .background .last-clas .left {
+  display: flex;
+  align-items: center;
+}
+body footer .background .last-clas .left .p-1 {
+  padding-right: 40px;
+}
+body footer .background .last-clas .p-1 {
+  color: var(--text-white, #fff);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.open {
+  top: 100px;
+}
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 1250px) {
+  body main .hero-learn .sides .left-side {
+    display: none;
+  }
+}
+@media (max-width: 1014px) {
+  body header .nav-links {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    top: -100%;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    transition: all 0.6s;
+  }
+  body header .open {
+    top: 100px;
+  }
+  body header .menu {
+    padding-top: 20px;
+    z-index: 99;
+    display: flex;
+    justify-content: end;
+  }
+}/*# sourceMappingURL=style.css.map */
